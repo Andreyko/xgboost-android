@@ -8,7 +8,7 @@ lib_file="../xgboost/lib/libxgboost.so"
 
 for abi in ${all_abi[*]}
 do
-    ./build_one_abi.sh $abi
+    ./build_abi_one.sh $abi
     
     if [ -f "$lib_file" ]
     then
