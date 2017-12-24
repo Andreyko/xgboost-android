@@ -1,0 +1,12 @@
+diff --git a/src/io/local_filesys.cc b/src/io/local_filesys.cc
+index 3cb1175..8f3601b 100644
+--- a/src/io/local_filesys.cc
++++ b/src/io/local_filesys.cc
+@@ -21,6 +21,7 @@ extern "C" {
+ #define fopen64 std::fopen
+ #endif
+ 
++#define fopen64 std::fopen
+ 
+ namespace dmlc {
+ namespace io {

@@ -1,0 +1,13 @@
+diff --git a/src/io/single_file_split.h b/src/io/single_file_split.h
+index 7fdeac2..c3e96f0 100644
+--- a/src/io/single_file_split.h
++++ b/src/io/single_file_split.h
+@@ -18,6 +18,8 @@
+ #define fopen64 std::fopen
+ #endif
+ 
++#define fopen64 std::fopen
++
+ namespace dmlc {
+ namespace io {
+ /*!

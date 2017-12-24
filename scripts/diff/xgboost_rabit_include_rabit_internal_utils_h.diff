@@ -1,0 +1,13 @@
+diff --git a/include/rabit/internal/utils.h b/include/rabit/internal/utils.h
+index 44e54e1..8b62072 100644
+--- a/include/rabit/internal/utils.h
++++ b/include/rabit/internal/utils.h
+@@ -36,6 +36,8 @@
+ #define fopen64 std::fopen
+ #endif
+ 
++#define fopen64 std::fopen
++
+ extern "C" {
+ #include <sys/types.h>
+ }
