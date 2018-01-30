@@ -8,7 +8,7 @@ then
     exit 1
 fi
 
-echo ">>> XGBOOST : BEGIN : " $(date -u)
+echo ">>> XGBOOST : BEGIN : $(date -u) <<<"
 
 git clone --recursive https://github.com/dmlc/xgboost "$xgboost"
 
@@ -23,4 +23,4 @@ cd ../rabit
 git apply ../../scripts/diff/xgboost_rabit_include_dmlc_base_h.diff
 git apply ../../scripts/diff/xgboost_rabit_include_rabit_internal_utils_h.diff
 
-echo ">>> XGBOOST : END : " $(date -u)
+echo ">>> XGBOOST : END : $(date -u) <<<"
